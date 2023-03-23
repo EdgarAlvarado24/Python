@@ -1,0 +1,6 @@
+texto = ("Hola Mundo")
+print(texto)
+texto = ("Texto modificado desde vim")
+print(texto)
+texto = ("Texto modificado por tercera vez")
+print(texto)
