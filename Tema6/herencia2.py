@@ -1,24 +1,23 @@
-class Alumno():
+class Alumno:
     def __init__(self, nombre, nota):
-        self._nombre = nombre
-        self._nota = nota
+        self.nombre = nombre
+        self.nota = nota
 
-    def get_nombre(self):
-        return self._nombre
-    
-    def set_nombre(self, nuevo_nombre):
-        self._nombre = nuevo_nombre
+    def ver_notas(self):
+        print("Nombre:",self.nombre)
+        print("Nota:", self.nota)
+        
+    def evaluar_notas(self):
+        if self.nota >= 10:
+            print("Haz Aprobado")
+        else:
+            print("Haz Reprobado")
 
-    def get_nota(self):
-        return self._nota
-    
-    def set_nota(self, nueva_nota):
-        self._nota = nueva_nota
+estudiante = Alumno("Edgar", 9)
+estudiante2 = Alumno("Maria",20)
 
-estudiante = Alumno("Edgar", 10)
+estudiante.ver_notas()
+estudiante.evaluar_notas()
 
-estudiante.set_nombre("Juan")
-print(estudiante.get_nota())
-estudiante._nota = 20
-print(estudiante._nombre)
-print(estudiante._nota)
+estudiante2.ver_notas()
+estudiante2.evaluar_notas()
