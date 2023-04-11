@@ -1,0 +1,2 @@
+Marca:Mustang,
+Modelo:GT

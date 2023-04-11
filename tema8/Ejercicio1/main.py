@@ -14,7 +14,7 @@ def actualizar_archivo(nombre_archivo, nueva_linea):
     with open(nombre_archivo, 'a') as archivo:
         archivo.write(nueva_linea + '\n')
 
-mi_archivo = 'tema8/mi_fichero.txt'
+mi_archivo = 'tema8/Ejercicio1/mi_fichero.txt'
 
 crear_archivo(mi_archivo)
 listar_archivo(mi_archivo)
