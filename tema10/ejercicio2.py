@@ -3,13 +3,11 @@ from tkinter import ttk
 
 root = Tk()
 
-monitor = Label(root, text='Lista de Compras')
+monitor = Label(root, text='Lista de Personas')
 monitor.pack()
-
+Listbox = Listbox(root)
 opcion = StringVar()
-Checkbutton(root, text='Arroz', variable='Arroz', command=opcion).pack(anchor=W)
-Checkbutton(root, text='Tomates', variable='Tomates', command=opcion).pack(anchor=W)
-Checkbutton(root, text='Queso', variable='Queso', command=opcion).pack(anchor=W)
-Checkbutton(root, text='Frutas', variable='Frutas', command=opcion).pack(anchor=W)
-
+for item in ["Pepe", "Maria", "Pedro", "Juan", "Ruben", "Carlos", "Laura", "Ana", "Lorena"]:
+    Listbox.insert(END, item)
+Listbox.pack()
 root.mainloop()
